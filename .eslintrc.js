@@ -1,9 +1,9 @@
-{ 
+module.exports = {
   "env": {
-  "browser": true,
-  "es2021": true,
-  "node": true
-},
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -14,7 +14,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
     "plugin:prettier/recommended"
   ],
   "rules": {
