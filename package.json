@@ -16,19 +16,29 @@
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.12.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   },
   "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/http-status": "^1.1.2",
+    "@types/mongoose": "^5.11.97",
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-async-errors": "^3.1.1",
+    "http-status": "^1.5.0",
+    "mongoose": "^6.1.7",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.4.0",
     "typeorm": "^0.2.41"
   }
 }
