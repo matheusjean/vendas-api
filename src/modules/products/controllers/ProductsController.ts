@@ -21,7 +21,7 @@ export default class ProductsController {
 
     const product = await showProduct.execute({ id });
 
-    return response.json(product);
+    return res.json(product);
   }
 
   public async create(req: Request, res: Response): Promise<Response> {
