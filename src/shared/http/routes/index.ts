@@ -1,12 +1,10 @@
 import productsRouter from '@modules/products/routes/Products.routes';
+import usersRouter from '@modules/users/routes/Users.routes';
 import { Router } from 'express';
 
 const routes = Router();
 
 routes.use('/products', productsRouter);
-
-routes.get('/', (req, res) => {
-  return res.json({ message: 'Api na versão 1.0' });
-});
+routes.use('/users', usersRouter);
 
 export default routes;

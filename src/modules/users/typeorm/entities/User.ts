@@ -3,10 +3,11 @@ import {
   CreateDateColumn,
   Entity,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 
 @Entity('users')
-export default class User {
+class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
   @Column()
@@ -19,6 +20,8 @@ export default class User {
   avatar: string;
   @CreateDateColumn()
   created_at: Date;
-  @CreateDateColumn()
-  update_at: Date;
+  @UpdateDateColumn()
+  updated_at: Date;
 }
+
+export default User;
