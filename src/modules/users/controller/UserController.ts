@@ -3,16 +3,16 @@ import CreateUserService from '../services/CreateUserService';
 import ListUserService from '../services/ListUserService';
 
 export default class UsersController {
-  public async index(request: Request, response: Response): Promise<Response> {
+  public async index(req: Request, res: Response): Promise<Response> {
     const listUser = new ListUserService();
 
     const users = await listUser.execute();
 
-    return response.json(users);
+    return res.json(users);
   }
 
-  public async create(request: Request, response: Response): Promise<Response> {
-    const { name, email, password } = request.body;
+  public async create(req: Request, res: Response): Promise<Response> {
+    const { name, email, password } = req.body;
 
     const createUser = new CreateUserService();
 
@@ -22,6 +22,6 @@ export default class UsersController {
       password,
     });
 
-    return response.json(user);
+    return res.json(user);
   }
 }
