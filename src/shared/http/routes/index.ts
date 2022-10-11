@@ -1,8 +1,12 @@
-import newsRouter from '@modules/news/routes/News.routes';
+import productsRouter from '@modules/products/routes/Products.routes';
+import sessionRouter from '@modules/users/routes/Sessions.routes';
+import usersRouter from '@modules/users/routes/Users.routes';
 import { Router } from 'express';
 
 const routes = Router();
 
-routes.use('/news', newsRouter);
+routes.use('/products', productsRouter);
+routes.use('/users', usersRouter);
+routes.use('/sessions', sessionRouter);
 
 export default routes;

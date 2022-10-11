@@ -3,39 +3,25 @@ import {
   CreateDateColumn,
   Entity,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('news')
-class News {
+@Entity('users')
+class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
-
   @Column()
-  title: string;
-
+  name: string;
   @Column()
-  hat: string;
-
+  email: string;
   @Column()
-  text: string;
-
+  password: string;
   @Column()
-  author: string;
-
-  @Column()
-  image: string;
-
-  @Column()
-  link: string;
-
-  @Column()
-  isActive: boolean;
-
+  avatar: string;
   @CreateDateColumn()
   created_at: Date;
-
-  @CreateDateColumn()
+  @UpdateDateColumn()
   updated_at: Date;
 }
 
-export default News;
+export default User;
