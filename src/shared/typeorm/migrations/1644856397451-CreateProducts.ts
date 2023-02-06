@@ -30,12 +30,12 @@ export class CreateProducts1644856397451 implements MigrationInterface {
           {
             name: 'created_at',
             type: 'timestamp with time zone',
-            default: 'now',
+            default: `now()`,
           },
           {
             name: 'updated_at',
             type: 'timestamp with time zone',
-            default: 'now',
+            default: `now()`,
           },
         ],
       }),
