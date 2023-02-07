@@ -23,7 +23,7 @@ app.use(routes);
 app.use(errors());
 
 app.route('/').get((req: Request, res: Response) => {
-  res.send({ versao: 'Api na Versão 1' });
+  res.send({ versao: 'Api na Versão 1.2' });
 });
 
 app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
